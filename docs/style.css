@@ -7,3 +7,10 @@ h1 {
     color: #137C8B;
     background: #344D59;
 }
+
+img {
+    display: flex;
+
+    justify-content: stretch;
+    align-items: stretch;
+}
