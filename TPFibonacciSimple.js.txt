@@ -1,0 +1,9 @@
+function fibonacci(nombreMax, actuel = 0, suivant = 1, compteur = 0) {
+    if (compteur > nombreMax) {
+        return;
+    }
+    console.log(actuel);
+    fibonacci(nombreMax, suivant, actuel + suivant, compteur + 1);
+}
+
+fibonacci(10);

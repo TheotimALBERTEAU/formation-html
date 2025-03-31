@@ -1,0 +1,49 @@
+function calculerSwitch(operande1, operande2, operateur) {
+    switch (operateur) {
+        case "*":
+            return operande1 * operande2;
+        case "/":
+            if (operande2 === 0) {
+                return "Division par 0 impossible";
+            }
+            return operande1 / operande2;
+        case "+":
+            return operande1 + operande2;
+        case "-":
+            return operande1 - operande2;
+        default:
+            return "Opérateur inconnu";
+    }
+}
+
+function calculerIf(operande1, operande2, operateur) {
+    if (operateur === "*") {
+        return operande1 * operande2;
+    } else if (operateur === "/") {
+        if (operande2 === 0) {
+            return "Division par 0 impossible";
+        }
+        return operande1 / operande2;
+    } else if (operateur === "+") {
+        return operande1 + operande2;
+    } else if (operateur === "-") {
+        return operande1 - operande2;
+    } else {
+        return "Opérateur inconnu";
+    }
+}
+
+console.log("Switch, 5 + 10 :", calculerSwitch(5, 10, "+"));
+console.log("Switch, 20 - 10 :", calculerSwitch(20, 10, "-"));
+console.log("Switch, 4 / 2 :", calculerSwitch(4, 2, "/"));
+console.log("Switch, 3 * 2 :", calculerSwitch(3, 2, "*"));
+console.log("Switch, opérateur incorrect :", calculerSwitch(0,0,"!"));
+console.log("Switch, Division par 0 :", calculerSwitch(2,0,"/"));
+
+
+console.log("If/Else, 5 + 10 :", calculerIf(5, 10, "+"));
+console.log("If/Else, 20 - 10 :", calculerIf(20, 10, "-"));
+console.log("If/Else, 4 / 2 :", calculerIf(4, 2, "/"));
+console.log("If/Else, 3 * 2 :", calculerIf(3, 2, "*"));
+console.log("If/Else, opérateur incorrect :", calculerIf(0,0,"!"));
+console.log("If/Else, Division par 0 :", calculerIf(2,0,"/"));

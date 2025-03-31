@@ -1,0 +1,49 @@
+const tableauLivres = [
+    ["Arthur C. Clarke", "Les Fontaines du Paradis"],
+    ["Philip K. Dick", "Ubik"],
+    ["Ray Bradbury", "Chroniques martiennes"],
+    ["Isaac Asimov", "Fondation"],
+    ["Ray Bradbury", "Fahrenheit 451"],
+    ["Arthur C. Clarke", "Rendez-vous avec Rama"],
+    ["Isaac Asimov", "Les Robots"],
+    ["Philip K. Dick", "Les Androïdes rêvent-ils de moutons électriques ?"],
+    ["Isaac Asimov", "Les Cavernes d'acier"],
+    ["Arthur C. Clarke", "2001 : L'Odyssée de l'espace"],
+    ["Ray Bradbury", "L'Homme illustré"],
+    ["Philip K. Dick", "Le Maître du Haut Château"],
+];
+
+function genererObjetPourTableauLivres(tableau) {
+    const obj = {};
+    tableau.forEach(function(sousTableau) {
+        const auteur = sousTableau[0];
+        const livre = sousTableau[1];
+        if (obj[auteur] === undefined) {
+            obj[auteur] = [];
+        }
+        obj[auteur].push(livre);
+    });
+    return obj;
+}
+
+function trierListesLivres(objLivres) {
+    for (let auteur in objLivres) {
+        const livres = objLivres[auteur];
+        livres.sort();
+    }
+    return objLivres;
+}
+
+function verifierPresenceLivre(objLivres, auteur, livre) {
+    if (objLivres[auteur] === undefined) {
+        return false;
+    }
+    const livreTrouve = objLivres[auteur].find(function(item) {
+        return item === livre;
+    });
+    return livreTrouve !== undefined;
+}
+
+const objetLivres = genererObjetPourTableauLivres(tableauLivres);
+verifierPresenceLivre(objetLivres, "Isaac Asimov", "Fondation"); //True
+verifierPresenceLivre(objetLivres, "Isaac Asimov", "Bla bla"); //False
