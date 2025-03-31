@@ -1,0 +1,9 @@
+h1 {
+    display: flex;
+    margin: 0 auto 1vw;
+    
+    justify-content: center;
+
+    color: #137C8B;
+    background: #344D59;
+}
