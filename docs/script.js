@@ -4,7 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     description.innerHTML = description.innerHTML.replace(/\./g, ".<br>");
 
     // Carrousel d'images
-    const images = ["assets/doigby1.jpg", "assets/doigby2.jpg", "assets/doigby3.jpg"];
+    const images = ["assets/doigby1.jpg",
+        "assets/doigby2.jpg",
+        "assets/doigby3.jpg",
+        "assets/doigby4.jpg",
+        "assets/doigby5.jpg",
+        "assets/doigby6.jpg",
+        "assets/doigby7.jpg",
+        "assets/doigby8.jpg",
+        "assets/doigby9.jpg",
+        "assets/doigby10.jpg",
+        "assets/doigby11.jpg"];
     let currentIndex = 0;
     const carouselImage = document.getElementById("carousel-image");
 
