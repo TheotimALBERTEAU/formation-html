@@ -14,7 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "assets/doigby8.jpg",
         "assets/doigby9.jpg",
         "assets/doigby10.jpg",
-        "assets/doigby11.jpg"];
+        "assets/doigby11.jpg",
+        "assets/doigby12.jpg",
+        "assets/doigby13.jpg",
+        "assets/doigby14.jpg",
+        "assets/doigby15.jpg",
+        "assets/doigby16.jpg"];
     let currentIndex = 0;
     const carouselImage = document.getElementById("carousel-image");
 
