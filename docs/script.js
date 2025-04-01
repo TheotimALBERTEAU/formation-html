@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "assets/doigby14.jpg",
         "assets/doigby15.jpg",
         "assets/doigby16.jpg",
-        "assets/doigby17.jpg"];
+        "assets/doigby17.jpg",
+        "assets/doigby18.jpg",];
     let currentIndex = 0;
     const carouselImage = document.getElementById("carousel-image");
 
