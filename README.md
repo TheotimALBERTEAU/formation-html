@@ -1,3 +1,7 @@
+# Voici un site créé en HTML, CSS et JS par moi-même et mon collaborateur [Lilian Brosset](https://github.com/Redgakill)
+[Site Web](https://theotimalberteau.github.io/formation-html/)
+
+
 # COURS HTML/CSS/JS
 
 ## 1 HTML
